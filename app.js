@@ -1,6 +1,7 @@
 // https://medium.com/pyradise/%E4%BD%BF%E7%94%A8node-js%E5%BB%BA%E7%BD%AE%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%80%8Bline-bot-590b7ba7a28a
 // https://github.com/Phyllis62418/LINEKICKALL
 // https://github.com/line/line-bot-sdk-nodejs
+// ./ngrok
 
 const express = require('express')
 const line = require('@line/bot-sdk')
@@ -31,11 +32,6 @@ app.post('/webhook', middleware(config), (req, res) => {
     });
 
 })
-
-// setTimeout(function() {
-//     const userId = 'Ua5442300b201811a0486bde6e42727e7';
-//     client.pushMessage(userId, { type: 'text', text: 'hello, world' })
-// }, 3000);
 
 app.get('/sendMsg', async (req, res) => {
     const userId = 'Ua5442300b201811a0486bde6e42727e7';
